@@ -33,7 +33,7 @@ module CybozuMessage
     end
 
     def line_break_convert(body)
-      body.gsub(/(\\r\\n|\\r|\\n)/, "&#xD;&#xA;")
+      body.gsub(/(\\r\\n|\\n)/, "&#xD;&#xA;")
     end
 
   end
