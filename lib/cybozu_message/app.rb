@@ -13,14 +13,14 @@ module CybozuMessage
 
       con = Connection.new(@option)
 
-      #ログイン
+      # ユーザー存在チェック
       user = con.login
       unless user
         notify(con.error)
         return
       end
 
-      #メッセージ送信
+      # メッセージ送信
       message_arr = con.message(addressee, subject, line_break_convert(body), file_path, confirm)
       unless message_arr
         notify(con.error)
