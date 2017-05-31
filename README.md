@@ -1,4 +1,4 @@
-#cybozu-message
+# cybozu-message
 
 ## 概要
 サイボウズOfficeに対して引数で指定された条件でメッセージを送信します。
